@@ -16,7 +16,7 @@ namespace UnitTestProject1
             int actual = weatherObj.TemperatureF;
 
             //Assert
-            Assert.AreEqual(expected, actual, "Temperature conversion-Incorrect ");
+            Assert.AreEqual(expected, actual, "Temperature conversion Failed");
 
 
         }
