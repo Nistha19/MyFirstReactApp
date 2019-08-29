@@ -11,8 +11,11 @@ namespace UnitTestProject1
         public void TestMethod1()
         {
             int expected = 76;
-            WeatherForecast weatherObj = new WeatherForecast();
-            weatherObj.TemperatureC = 25;
+
+            WeatherForecast weatherObj = new WeatherForecast
+            {
+                TemperatureC = 25
+            };
             int actual = weatherObj.TemperatureF;
 
             //Assert
