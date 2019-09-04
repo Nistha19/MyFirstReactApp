@@ -65,9 +65,10 @@
     <CaptureTraceOutput>false</CaptureTraceOutput>
     <DeleteDeploymentDirectoryAfterTestRunIsComplete>False</DeleteDeploymentDirectoryAfterTestRunIsComplete>
     <DeploymentEnabled>False</DeploymentEnabled>
+    <!--
     <AssemblyResolution>
       <Directory path="C:\NIF\Nistha\MyFirstReactApp\MyFirstReactApp\bin\" includeSubDirectories="false"/>
-    </AssemblyResolution>
+    </AssemblyResolution>-->
   </MSTest>
 
 </RunSettings>
