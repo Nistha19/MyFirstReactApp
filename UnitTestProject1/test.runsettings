@@ -18,7 +18,7 @@
 
     <!-- TestSessionTimeout was introduced in Visual Studio 2017 version 15.5 -->
     <!-- Specify timeout in milliseconds. A valid value should be greater than 0 -->
-    <TestSessionTimeout>10000</TestSessionTimeout>
+    <TestSessionTimeout>900000</TestSessionTimeout>
   </RunConfiguration>
 
   <!-- Configurations for data collectors -->
@@ -50,12 +50,10 @@
     </DataCollectors>
   </DataCollectionRunSettings>
 
-  <!-- Parameters used by tests at runtime 
+  <!-- Parameters used by tests at runtime -->
   <TestRunParameters>
-    <Parameter name="webAppUrl" value="http://localhost" />
-    <Parameter name="webAppUserName" value="Admin" />
-    <Parameter name="webAppPassword" value="Password" />
-  </TestRunParameters> -->
+    <Parameter name="celsiusTemp" value="25" />
+  </TestRunParameters>
 
   <!-- Adapter Specific sections -->
 
