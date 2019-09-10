@@ -8,10 +8,10 @@
 
     <!-- x86 or x64 -->
     <!-- You can also change it from the test settings menu; choose "Processor Architecture for AnyCPU Projects" -->
-    <TargetPlatform>x64</TargetPlatform>
+    <TargetPlatform>x86</TargetPlatform>
 
     <!-- Framework35 | [Framework40] | Framework45 -->
-    <TargetFrameworkVersion>FrameworkCore10</TargetFrameworkVersion>
+    <TargetFrameworkVersion>.NETCoreApp, Version=v2.1</TargetFrameworkVersion>
 
     <!-- Path to Test Adapters -->
     <TestAdaptersPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdaptersPaths>
@@ -63,9 +63,10 @@
     <CaptureTraceOutput>false</CaptureTraceOutput>
     <DeleteDeploymentDirectoryAfterTestRunIsComplete>False</DeleteDeploymentDirectoryAfterTestRunIsComplete>
     <DeploymentEnabled>False</DeploymentEnabled>
+    <!--
     <AssemblyResolution>
       <Directory path="C:\NIF\Nistha\MyFirstReactApp\MyFirstReactApp\bin\" includeSubDirectories="false"/>
-    </AssemblyResolution>
+    </AssemblyResolution>-->
   </MSTest>
 
 </RunSettings>
