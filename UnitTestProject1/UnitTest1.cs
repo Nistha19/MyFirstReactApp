@@ -17,7 +17,7 @@ namespace UnitTestProject1
             Console.WriteLine(celsiusTemperature);
         }
         */
-        
+        public TestContext TestContext { get; set; }
 
         [TestMethod]
         public void TestMethod1()
@@ -38,16 +38,16 @@ namespace UnitTestProject1
         }
         
      
-        [DataTestMethod]
-        [DataRow(25)]
-        public void TestMethod2(int temp)
+        [TestMethod]
+        public void TestMethod2()
 
         {
             int expectedTemp = 76;
+            var ctemp =  TestContext.Properties["celsiusTemp"].ToString();
 
             WeatherForecast weatherObj = new WeatherForecast
             {
-                TemperatureC = temp
+                TemperatureC = System.Int32.Parse(ctemp)
             };
             int actual = weatherObj.TemperatureF;
 
@@ -55,6 +55,21 @@ namespace UnitTestProject1
             Assert.AreEqual(expectedTemp, actual, "Temperature Conversion Failed-2");
 
         }
+
+        /*
+         *public TestContext TestContext { get; set; }
+
+        
+        [TestMethod]
+        public void RunTestsWithContextParameters()
+        {
+            //No need to initialize and instead use the TestContext static variable 
+            // directly
+
+            string user = "huntley";// (string)TestContext.Properties["webAppUser"];
+
+            Console.WriteLine("Running with user " + user);
+         */
 
     }
 }
