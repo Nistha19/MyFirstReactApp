@@ -7,16 +7,6 @@ namespace UnitTestProject1
     [TestClass]
     public class UnitTest1
     {
-        /*
-        public static int celsiusTemperature = 0;
-        [ClassInitialize]
-        public static void TestClassInitialize(TestContext context)
-        {
-            var celsiusTemperature = Convert.ToInt32(context.Properties["celsiusTemp"]);
-            
-            Console.WriteLine(celsiusTemperature);
-        }
-        */
         public TestContext TestContext { get; set; }
 
         [TestMethod]
@@ -56,21 +46,7 @@ namespace UnitTestProject1
 
         }
 
-        /*
-         *public TestContext TestContext { get; set; }
-
-        
-        [TestMethod]
-        public void RunTestsWithContextParameters()
-        {
-            //No need to initialize and instead use the TestContext static variable 
-            // directly
-
-            string user = "huntley";// (string)TestContext.Properties["webAppUser"];
-
-            Console.WriteLine("Running with user " + user);
-         */
-
+       
     }
 }
 
