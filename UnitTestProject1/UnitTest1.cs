@@ -32,7 +32,7 @@ namespace UnitTestProject1
         public void TestMethod2()
 
         {
-            int expectedTemp = 76;
+            var expectedTemp = TestContext.Properties["fahrenheitTemp"].ToString();
             var ctemp =  TestContext.Properties["celsiusTemp"].ToString();
 
             WeatherForecast weatherObj = new WeatherForecast
@@ -42,7 +42,7 @@ namespace UnitTestProject1
             int actual = weatherObj.TemperatureF;
 
             //Assert
-            Assert.AreEqual(expectedTemp, actual, "Temperature Conversion Failed-2");
+            Assert.AreEqual(System.Int32.Parse(expectedTemp), actual, "Temperature Conversion Failed-2");
 
         }
 

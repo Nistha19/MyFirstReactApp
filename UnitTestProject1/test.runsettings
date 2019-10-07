@@ -52,6 +52,7 @@
 
   <!-- Parameters used by tests at runtime -->
   <TestRunParameters>
+    <Parameter name="fahrenheitTemp" value="76" />
     <Parameter name="celsiusTemp" value="25" />
   </TestRunParameters>
 
